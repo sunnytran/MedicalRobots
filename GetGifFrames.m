@@ -10,6 +10,7 @@ nombre = strcat('im',num,'.jpg');
 imwrite(im,map,nombre)  
 A=imread(nombre);
 A=rgb2gray(A);
-imshow(A);
+imgThresh = A > 130;
+imshow(imgThresh);
 end
 
